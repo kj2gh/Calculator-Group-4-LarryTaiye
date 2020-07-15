@@ -1,3 +1,6 @@
+from math import sqrt
+from Calculator.Square import square
+from Calculator.Square_root import square_root
 from Calculator.Subtraction import subtraction
 from Calculator.Addition import addition
 from Calculator.Multiplication import multiplication
@@ -21,8 +24,15 @@ class Calculator:
     def multiply(self, a, b):
         self.result = multiplication(a, b)
         return self.result
-    
-    def divide(self, a, b): 
-        self.result = division(a, b)
-        return self.result    
 
+    def divide(self, a, b):
+        self.result = division(a, b)
+        return self.result
+
+    def square(self, a):
+        self.result = square(a)
+        return self.result
+
+    def square_root(self, a):
+        self.result = square_root(a)
+        return self.result
